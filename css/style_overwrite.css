@@ -105,3 +105,28 @@
   color: #f14e95;
   font-size: 26px;
 }
+
+
+#clockdiv {
+  font-family: "The Nautigal", Arial, sans-serif;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 200;
+  text-align: center;
+  font-size: 45px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background:  #f14e95;
+	display: inline-block;
+  border-radius: 50%;
+}
+
