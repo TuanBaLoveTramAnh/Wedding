@@ -70,6 +70,7 @@
     
 	<div class="fh5co-loader"></div>
 	
+		
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="container">
@@ -121,9 +122,17 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1 >Tuấn Ba &amp; Trâm Anh</h1>
 							<h2>Chúng tôi tổ chức lễ Thành hôn</h2>
-							<div class="simply-countdown simply-countdown-one"></div>
+							<div id="clockdiv">
+								<span class="days"></span>
+								<div class="smalltext">Ngày</div>
+								<span class="hours"></span>
+								<div class="smalltext">Giờ</div>
+								<span class="minutes"></span>
+								<div class="smalltext">Phút</div>
+								<span class="seconds"></span>
+								<div class="smalltext">Giây</div>
+							</div>
 						</div>
-						
 					</div>
 				</div>
 			</div>
@@ -642,22 +651,23 @@
 
 	<script>
 	
-		var d = 
-		new Date('2023,05,07 10:30:40');
-		// default example
-		simplyCountdown('.simply-countdown-one', {
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate()
-		});
+		// var d = 
+		// new Date('2023,05,07 10:30:40');
+		// // default example
+		// simplyCountdown('.simply-countdown-one', {
+		// 	year: d.getFullYear(),
+		// 	month: d.getMonth() + 1,
+		// 	day: d.getDate()
+		// });
 
-		//jQuery example
-		$('#simply-countdown-losange').simplyCountdown({
-			year: d.getFullYear(),
-			month: d.getMonth() + 1,
-			day: d.getDate(),
-			enableUtc: false
-		});
+		// //jQuery example
+		// $('#simply-countdown-losange').simplyCountdown({
+		// 	year: d.getFullYear(),
+		// 	month: d.getMonth() + 1,
+		// 	day: d.getDate(),
+		// 	enableUtc: true
+		// });
+  		initializeClock('clockdiv', '2023-05-06:09:30:00');
 		
 </script>
 
